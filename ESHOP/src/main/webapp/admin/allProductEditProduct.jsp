@@ -35,9 +35,10 @@ if("wrong".equals(msg))
         <thead>
           <tr>
             <th scope="col">ID</th>
+            <th scope="col">Image</th>
             <th scope="col">Name</th>
             <th scope="col">Category</th>
-            <th scope="col"><i class="fa fa-inr"></i> Price</th>
+            <th scope="col"><i class="fa fa-dollar"></i> Price</th>
             <th>Status</th>
             <th scope="col">Edit <i class='fas fa-pen-fancy'></i></th>
           </tr>
@@ -53,9 +54,10 @@ if("wrong".equals(msg))
        %>
           <tr>
             <td><%=rs.getString(1) %></td>
+            <td><img src=<%=rs.getString(6) %> width="50"></td>
             <td><%=rs.getString(2) %></td>
             <td><%=rs.getString(3) %></td>
-            <td><i class="fa fa-inr"></i> <%=rs.getString(4) %></td>
+            <td><i class="fa fa-dollar"></i> <%=rs.getString(4) %></td>
             <td><%=rs.getString(5) %></td>
             <td><a href="editProduct.jsp?id=<%=rs.getString(1) %>">Edit <i class='fas fa-pen-fancy'></i></a></td>
           </tr>

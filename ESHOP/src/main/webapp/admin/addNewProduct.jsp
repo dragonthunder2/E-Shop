@@ -69,6 +69,12 @@ catch(Exception e)
  </select>
 <hr>
 </div>
+
+<div class="left-div">
+<h3>Enter Image URL</h3>
+ <input class="input-style" type="text" name="img" placeholder="Enter Image URL" required>
+<hr>
+</div>
  <button class="button">Save <i class='far fa-arrow-alt-circle-right'></i></button>
 </form>
 </body>

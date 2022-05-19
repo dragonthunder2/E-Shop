@@ -1,13 +1,30 @@
 body {
 	font-family: "Open Sans", sans-serif;
 	line-height: 1.25;
-	background-color: #ff80ff;
+	background-color: #0080ff;
+}
+
+div {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.container {
+    width: 50%;
+    height: 50%;
+}
+
+/* Resize images */
+.container img {
+    width: 100%;
+    height: 100%;
 }
 
 .card-img-top {
-	width: 100%; height : 40vh;
+	width: 100%; height : 20vh;
 	object-fit: cover;
-	height: 40vh;
+	height: 20vh;
 }
 
 a {
