@@ -4,8 +4,7 @@
 <%@include file="footer.jsp"%>
 <html>
 <head>
-<link rel="stylesheet"
-	href="${pageContext.request.contextPath}/css/home-style.css">
+<link rel="stylesheet" href="../css/home-style.css">
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Home</title>
 <style>
@@ -16,7 +15,6 @@ h3 {
 </style>
 </head>
 <body>
-
 	<div style="color: white; text-align: center; font-size: 30px;">
 		Home <i class="fa fa-institution"></i>
 	</div>
@@ -68,7 +66,6 @@ h3 {
 					</div>
 				</div>
 			</div>
-
 			<%
 			}
 			} catch (Exception e) {
@@ -78,6 +75,5 @@ h3 {
 		</div>
 	</div>
 	
-	<%@include file="../footer.jsp"%>
 </body>
 </html>

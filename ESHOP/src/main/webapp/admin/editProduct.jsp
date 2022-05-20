@@ -59,8 +59,8 @@
 		</div>
 
 		<div class="left-div">
-			<h3>Enter Price</h3>
-			<input class="input-style" type="text" name="image"
+			<h3>Enter Image URL</h3>
+			<input class="input-style" type="text" name="img"
 				value="<%=rs.getString(6)%>" required>
 			<hr>
 		</div>

@@ -12,7 +12,7 @@ try
 {
 	Connection con=ConnectionProvider.getCon();
 	Statement st=con.createStatement();
-	ResultSet rs=st.executeQuery("select* from cart where email='"+email+"' and product_id='"+id+"' and address is NULL");
+	ResultSet rs=st.executeQuery("select * from cart where email='"+email+"' and product_id='"+id+"' and address is NULL");
 	while(rs.next())
 	{
 		price=rs.getInt(4);
