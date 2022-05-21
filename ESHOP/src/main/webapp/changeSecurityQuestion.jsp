@@ -11,7 +11,7 @@
 <h3 class="alert">Your Password is wrong!</h3>
 
 
-<h3>Select Your New Securtiy Question</h3>
+<h3>Select Your New Security Question</h3>
   
  <hr>
  <h3>Enter Your New Answer</h3>
