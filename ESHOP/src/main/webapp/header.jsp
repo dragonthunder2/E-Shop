@@ -16,7 +16,7 @@
 <!--Header-->
 <br>
 
-	<nav class="navbar sticky-top navbar-light bg-light">
+	<nav class="navbar sticky-top navbar-expand navbar-light bg-light">
 		<a class="navbar-brand" href="#">E-Shop</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse"
 			data-target="#navbarSupportedContent"
@@ -36,17 +36,17 @@
 					role="button" data-toggle="dropdown" aria-haspopup="true"
 					aria-expanded="false"> </a>
 					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-						<a class="dropdown-item" href="#">Action</a> <a
-							class="dropdown-item" href="#">Another action</a>
+						<a class="dropdown-item" href="myCart.jsp">My Cart</a> <a
+							class="dropdown-item" href="#">My Order</a>
 						<div class="dropdown-divider"></div>
-						<a class="dropdown-item" href="#">Something else here</a>
+						<a class="dropdown-item" href="logout.jsp">Log out</a>
 					</div></li>
 				<li class="nav-item"><a class="nav-link disabled" href="#">Disabled</a>
 				</li>
 			</ul>
-			<form class="form-inline my-2 my-lg-0">
-				<input class="form-control mr-sm-2" type="search"
-					placeholder="Search" aria-label="Search">
+			<form class="form-inline my-2 my-lg-0" action="searchHome.jsp" method="post">
+				<input class="form-control mr-sm-2" type="text"
+					placeholder="Search" aria-label="Search" name="search">
 				<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
 			</form>
 		</div>
@@ -57,9 +57,6 @@
 	<%
 	String email = session.getAttribute("email").toString();
 	%>
-	<center>
-		<h2>E-Shop</h2>
-	</center>
 	<h2>
 		<a href=""> <%
  out.println(email);

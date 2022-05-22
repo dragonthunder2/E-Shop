@@ -51,13 +51,13 @@ h3 {
 				ResultSet rs = st.executeQuery("select* from products where active='Yes'");
 				while (rs.next()) {
 			%>
-			<div class="col-md-3">
+			<div class="col-sm-3">
 				<div class="card w-100" style="width: 18rem;">
 					<img class="card-img-top" src=<%=rs.getString(6)%>
 						alt="Card image cap">
 					<div class="card-body">
-						<h5 class="card-title"><%=rs.getString(2)%></h5>
-						<h6 class="price"><%=rs.getString(4)%></h6>
+						<h5 class="card-title" ><%=rs.getString(2)%></h5>
+						<h6 class="price"><i class="fa fa-dollar"></i><%=rs.getString(4)%></h6>
 						<h6 class="category"><%=rs.getString(3)%></h6>
 						<div class="mt-3 d-flex justify-content-between">
 							<a href="addToCartAction.jsp?id=<%=rs.getString(1)%>"
