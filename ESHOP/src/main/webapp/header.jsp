@@ -26,7 +26,7 @@ String email = session.getAttribute("email").toString();
 			<li class="nav-item active"><a class="nav-link" href="home.jsp">Home
 					<span class="sr-only">(current)</span>
 			</a></li>
-			<li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+			<li class="nav-item"><a class="nav-link" href="messageUs.jsp">Contact</a></li>
 			<li class="nav-item"><a class="nav-link disabled" href="#">Disabled</a>
 			</li>
 			<li class="nav-item dropdown"><a

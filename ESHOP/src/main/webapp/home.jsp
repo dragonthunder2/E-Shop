@@ -18,8 +18,6 @@ h3 {
 </style>
 </head>
 <body>
-
-
 	<div id="myCarousel" class="carousel slide" data-ride="carousel">
 		<ol class="carousel-indicators">
 			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -33,7 +31,7 @@ h3 {
 					alt="First slide">
 				<div class="container">
 					<div class="carousel-caption text-left">
-						<h1>Example headline.</h1>
+						<h1>Welcome to E-SHOP.</h1>
 						<p>Cras justo odio, dapibus ac facilisis in, egestas eget
 							quam. Donec id elit non mi porta gravida at eget metus. Nullam id
 							dolor id nibh ultricies vehicula ut id elit.</p>
@@ -90,7 +88,7 @@ h3 {
 
 	<div class="container mt-100">
 		<div style="color: black; text-align: center; font-size: 35px;">
-			Popular Category <i class="fa fa-cart"></i> <br> <br>
+			Popular Categories <i class="fa fa-cart"></i> <br> <br>
 		</div>
 		<div class="row">
 			<div class="col-md-4 col-sm-6">
@@ -167,20 +165,26 @@ h3 {
 	</div>
 
 	<div class="container">
+		<hr class="featurette-divider">
+		<div style="color: black; text-align: center; font-size: 35px;">
+			Popular Products <br> <br>
+		</div>
 		<div class="row">
 			<%
 			try {
 				Connection con = ConnectionProvider.getCon();
 				Statement st = con.createStatement();
-				ResultSet rs = st.executeQuery("select* from products where active='Yes'");
+				ResultSet rs = st.executeQuery("select* from products where active='Yes' limit 6");
 				while (rs.next()) {
 			%>
 			<div class="col-12 col-sm-8 col-md-6 col-lg-4">
 				<div class="card">
-					<img class="card-img" src=<%=rs.getString(6)%> alt="Vans">				
+					<img class="card-img" src=<%=rs.getString(6)%> alt="Vans">
 					<div class="card-body">
 						<h5 class="card-title"><%=rs.getString(2)%></h5>
-						<h6 class="card-subtitle mb-2 text-muted">Category: <%=rs.getString(3)%></h6>
+						<h6 class="card-subtitle mb-2 text-muted">
+							Category:
+							<%=rs.getString(3)%></h6>
 						<p class="card-text"><%=rs.getString(7)%></p>
 						<div class="options d-flex flex-fill"></div>
 						<div class="buy d-flex justify-content-between align-items-center">
@@ -195,7 +199,7 @@ h3 {
 					</div>
 				</div>
 			</div>
-	
+
 			<%
 			}
 			} catch (Exception e) {
@@ -205,10 +209,9 @@ h3 {
 		</div>
 	</div>
 
-	<hr class="featurette-divider">
-
 	<!-- FOOTER -->
 	<footer class="container">
+		<hr class="featurette-divider">
 		<p class="float-right">
 			<a href="#">Back to top</a>
 		</p>
