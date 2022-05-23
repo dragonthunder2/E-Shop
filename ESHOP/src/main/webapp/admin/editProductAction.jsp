@@ -7,11 +7,12 @@ String category=request.getParameter("category");
 String price=request.getParameter("price");
 String active=request.getParameter("active");
 String img=request.getParameter("img");
+String descrip=request.getParameter("descrip");
 try
 {
 	Connection con=ConnectionProvider.getCon();
 	Statement st=con.createStatement();
-	st.executeUpdate("update products set name='"+name+"',category='"+category+"', price='"+price+"',active='"+active+"',img='"+img+"' where id='"+id+"'");
+	st.executeUpdate("update products set name='"+name+"',category='"+category+"', price='"+price+"',active='"+active+"',img='"+img+"',descrip='"+descrip+"' where id='"+id+"'");
 	if(active.equals("No"));
 	{
 		st.executeUpdate("delete from cart where product_id='"+id+"' and address is NULL");

@@ -1,4 +1,4 @@
-<%@ page import="project.ConnectionProvider"%>"
+<%@ page import="project.ConnectionProvider"%>
 <%@ page import="java.sql.*"%>
 <%@include file="adminHeader.jsp" %>
 <%@include file="../footer.jsp" %>
@@ -73,6 +73,12 @@ catch(Exception e)
 <div class="left-div">
 <h3>Enter Image URL</h3>
  <input class="input-style" type="text" name="img" placeholder="Enter Image URL" required>
+<hr>
+</div>
+
+<div class="right-div">
+<h3>Description</h3>
+ <input class="input-style" type="text" name="descrip" placeholder="Enter Description">
 <hr>
 </div>
  <button class="button">Save <i class='far fa-arrow-alt-circle-right'></i></button>

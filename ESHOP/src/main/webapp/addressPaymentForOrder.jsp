@@ -30,7 +30,7 @@ try
 %>
           <tr>
           <th scope="col"><a href="myCart.jsp"><i class='fas fa-arrow-circle-left'> Back</i></a></th>
-            <th scope="col" style="background-color: yellow;">Total: <i class="fa fa-inr"></i> <%out.println(total); %> </th>
+            <th scope="col" style="background-color: yellow;">Total: <i class="fa fa-dollar"></i> <%out.println(total); %> </th>
           </tr>
         </thead>
         <thead>
@@ -99,7 +99,7 @@ try
 </div>
 
 <div class="right-div">
-<h3>Pay online on this btechdays@pay.com</h3>
+<h3>Pay online</h3>
 <input class="input-style" type="text" name="transactionId" placeholder="Enter Transaction ID">
 <h3 style="color: red">*If you select online Payment then enter you transaction ID here otherwise leave this blank</h3>
 </div>

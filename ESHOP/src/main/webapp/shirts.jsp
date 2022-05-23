@@ -14,16 +14,13 @@
 
 	<div class="container">
 		<div class="row">
-			<%
-			int z = 0;
-			try {
-				String search = request.getParameter("search");
+			<%			
+			try {				
 				Connection con = ConnectionProvider.getCon();
 				Statement st = con.createStatement();
-				ResultSet rs = st.executeQuery("select* from products where name like '%" + search + "%' or category like '%"
-				+ search + "%' and active='Yes'");
+				ResultSet rs = st.executeQuery("select* from products where category='Shirts' and active='Yes'");
 				while (rs.next()) {
-					z = 1;
+				
 			%>
 			<div class="col-sm-3">
 				<div class="card w-100" style="width: 18rem;">
@@ -49,13 +46,6 @@
 			%>
 		</div>
 	</div>
-	<%
-	if (z == 0) {
-	%>
-	<h1 style="color: white; text-align: center;">Nothing to show</h1>
-	<%
-	}
-	%>
 
 	<br>
 	<br>

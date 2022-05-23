@@ -1,4 +1,4 @@
-<%@ page import="project.ConnectionProvider"%>"
+<%@ page import="project.ConnectionProvider"%>
 <%@ page import="java.sql.*"%>
 <%@include file="adminHeader.jsp"%>
 <%@include file="../footer.jsp"%>
@@ -62,6 +62,13 @@
 			<h3>Enter Image URL</h3>
 			<input class="input-style" type="text" name="img"
 				value="<%=rs.getString(6)%>" required>
+			<hr>
+		</div>
+		
+		<div class="right-div">
+			<h3>Product Description</h3>
+			<input class="input-style" type="text" name="descrip"
+				value="<%=rs.getString(7)%>">
 			<hr>
 		</div>
 

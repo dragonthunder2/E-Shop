@@ -5,6 +5,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
 <title>My Cart</title>
 <style>
 h3 {
@@ -14,6 +15,8 @@ h3 {
 </style>
 </head>
 <body>
+<br>
+<br>
 	<div style="color: white; text-align: center; font-size: 30px;">
 		My Cart <i class='fas fa-cart-arrow-down'></i>
 	</div>
@@ -106,10 +109,10 @@ h3 {
 				<td><i class="fa fa-dollar"></i> <%=rs.getString(4)%></td>
 				<td><a
 					href="incDecQuantityAction.jsp?id=<%=rs.getString(1)%>&quantity=inc"><i
-						class='fas fa-plus-circle'></i></a> <%=rs.getString(9)%> <a
+						class='fas fa-plus-circle'></i></a> <%=rs.getString(10)%> <a
 					href="incDecQuantityAction.jsp?id=<%=rs.getString(1)%>&quantity=dec"><i
 						class='fas fa-minus-circle'></i></a></td>
-				<td><i class="fa fa-dollar"></i><%=rs.getString(11)%></td>
+				<td><i class="fa fa-dollar"></i><%=rs.getString(12)%></td>
 				<td><a href="removeFromCart.jsp?id=<%=rs.getString(1)%>">Remove
 						<i class='fas fa-trash-alt'></i>
 				</a></td>
