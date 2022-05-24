@@ -27,8 +27,6 @@ String email = session.getAttribute("email").toString();
 					<span class="sr-only">(current)</span>
 			</a></li>
 			<li class="nav-item"><a class="nav-link" href="messageUs.jsp">Contact</a></li>
-			<li class="nav-item"><a class="nav-link disabled" href="#">Disabled</a>
-			</li>
 			<li class="nav-item dropdown"><a
 				class="nav-link dropdown-toggle" href="http://example.com"
 				id="dropdown06" data-toggle="dropdown" aria-haspopup="true"

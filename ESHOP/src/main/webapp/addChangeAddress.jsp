@@ -1,7 +1,6 @@
 <%@ page import="project.ConnectionProvider"%>
 <%@ page import="java.sql.*"%>
 <%@include file="changeDetailsHeader.jsp"%>
-<%@include file="footer.jsp"%>
 <html>
 <head>
 <link rel="stylesheet" href="css/changeDetails.css">
@@ -44,7 +43,7 @@ try
 <h3>Enter country</h3>
  <input class="input-style" type="text" name="country" value="<%=rs.getString(8) %>" placeholder="Enter Country" required>
 <hr>
- <button class="button" type="submit">Save <i class='far fa-arrow-alt-circle-right'></i></button>
+ <button class="button" type="submit">Save <i></i></button>
 </form>
 <%
 	}

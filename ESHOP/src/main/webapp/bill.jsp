@@ -21,7 +21,7 @@
 		"select * from users inner join cart where cart.email='" + email + "' and cart.status='bill'");
 		while (rs2.next()) {
 	%>
-	<h3>Online shopping Bill</h3>
+	<h3>E-Shop Bill</h3>
 	<hr>
 	<div class="left-div">
 		<h3>
@@ -91,7 +91,6 @@
 	}
 	%>
 
-
 	<br>
 
 	<table id="customers">
@@ -132,11 +131,13 @@
 	<h3>
 		Total:
 		<%
-	out.println(total);
+	out.println("$" + total);
 	%>
 	</h3>
-	<a href="continueShopping.jsp"><button class="button left-button">Continue
-			Shopping</button></a>
+	<h3>
+		<a href="continueShopping.jsp"><button class="button left-button">Continue
+				Shopping</button></a>
+	</h3>
 	<br>
 	<br>
 	<br>

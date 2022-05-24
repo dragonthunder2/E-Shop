@@ -6,6 +6,7 @@
 <title>Login</title>
 </head>
 <body>
+
 	<div id='container'>
 		<div class='signup'>
 			<form action="loginAction.jsp" method="post">
@@ -36,9 +37,8 @@
 			<%
 			}
 			%>
-			<h2>Online Shopping</h2>
-			<p>The Online Shopping System is the application that allows the
-				users to shop online without going to the shops to buy them.</p>
+			<h2>E-Shop</h2>
+			<p>Online shopping platform for everyone.</p>
 		</div>
 	</div>
 

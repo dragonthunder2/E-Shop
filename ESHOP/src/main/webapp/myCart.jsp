@@ -1,7 +1,7 @@
 <%@ page import="project.ConnectionProvider"%>
 <%@ page import="java.sql.*"%>
 <%@include file="header.jsp"%>
-<%@include file="footer.jsp"%>
+
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
@@ -9,43 +9,24 @@
 <title>My Cart</title>
 <style>
 h3 {
-	color: yellow;
+	color: blue;
 	text-align: center;
 }
 </style>
 </head>
 <body>
-<br>
-<br>
+	<br>
+	<br>
 	<div style="color: white; text-align: center; font-size: 30px;">
 		My Cart <i class='fas fa-cart-arrow-down'></i>
 	</div>
+		
+	
 	<%
 	String msg = request.getParameter("msg");
 	if ("notPossible".equals(msg)) {
 	%>
 	<h3 class="alert">There is only one Quantity! So click on remove!</h3>
-	<%
-	}
-	%>
-	<%
-	if ("inc".equals(msg)) {
-	%>
-	<h3 class="alert">Quantity Increased Successfully!</h3>
-	<%
-	}
-	%>
-	<%
-	if ("dec".equals(msg)) {
-	%>
-	<h3 class="alert">Quantity Decreased Successfully!</h3>
-	<%
-	}
-	%>
-	<%
-	if ("removed".equals(msg)) {
-	%>
-	<h3 class="alert">Product Successfully Removed!</h3>
 	<%
 	}
 	%>
@@ -63,10 +44,9 @@ h3 {
 				}
 			%>
 			<tr>
-				<th scope="col" style="background-color: yellow;">Total: <%
+				<th scope="col" class="bg-primary text-blue">Total: <%
 				out.println(total);
-				%>
-					<i class="fa fa-dollar"></i>
+				%> <i class="fa fa-dollar"></i>
 				</th>
 				<%
 				if (total > 0) {
@@ -81,6 +61,7 @@ h3 {
 		<thead>
 			<tr>
 				<th scope="col">S.No</th>
+				<th scope="col">Image</th>
 				<th scope="col">Product Name</th>
 				<th scope="col">Category</th>
 				<th scope="col"><i class="fa fa-dollar"></i> price</th>
@@ -95,6 +76,7 @@ h3 {
 					+ email + "' and cart.address is NULL");
 			while (rs.next()) {
 			%>
+			
 			<tr>
 				<%
 				sno = sno + 1;
@@ -104,6 +86,7 @@ h3 {
 					out.println(sno);
 					%>
 				</td>
+				<td><img src=<%=rs.getString(6) %> width="50"></td>
 				<td><%=rs.getString(2)%></td>
 				<td><%=rs.getString(3)%></td>
 				<td><i class="fa fa-dollar"></i> <%=rs.getString(4)%></td>
@@ -128,6 +111,37 @@ h3 {
 	<br>
 	<br>
 	<br>
-
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<%@include file="footer.jsp"%>
+	
 </body>
 </html>

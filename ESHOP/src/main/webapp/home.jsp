@@ -1,7 +1,7 @@
 <%@ page import="project.ConnectionProvider"%>
 <%@ page import="java.sql.*"%>
 <%@include file="header.jsp"%>
-<%@include file="footer.jsp"%>
+
 <html>
 <head>
 <link rel="stylesheet" href="css/card-style.css">
@@ -17,6 +17,7 @@ h3 {
 }
 </style>
 </head>
+
 <body>
 	<div id="myCarousel" class="carousel slide" data-ride="carousel">
 		<ol class="carousel-indicators">
@@ -32,11 +33,9 @@ h3 {
 				<div class="container">
 					<div class="carousel-caption text-left">
 						<h1>Welcome to E-SHOP.</h1>
-						<p>Cras justo odio, dapibus ac facilisis in, egestas eget
-							quam. Donec id elit non mi porta gravida at eget metus. Nullam id
-							dolor id nibh ultricies vehicula ut id elit.</p>
+						<p>Online shopping Website made by group 4.</p>
 						<p>
-							<a class="btn btn-lg btn-primary" href="#" role="button">Sign
+							<a class="btn btn-lg btn-primary" href="signup.jsp" role="button">Sign
 								up today</a>
 						</p>
 					</div>
@@ -48,13 +47,10 @@ h3 {
 					alt="Second slide">
 				<div class="container">
 					<div class="carousel-caption">
-						<h1>Another example headline.</h1>
-						<p>Cras justo odio, dapibus ac facilisis in, egestas eget
-							quam. Donec id elit non mi porta gravida at eget metus. Nullam id
-							dolor id nibh ultricies vehicula ut id elit.</p>
+						<h1>Give us your Feedback</h1>
+						<p>We will improve products base on your feedback.</p>
 						<p>
-							<a class="btn btn-lg btn-primary" href="#" role="button">Learn
-								more</a>
+							<a class="btn btn-lg btn-primary" href="messageUs.jsp" role="button">Contact Us</a>
 						</p>
 					</div>
 				</div>
@@ -65,13 +61,10 @@ h3 {
 					alt="Third slide">
 				<div class="container">
 					<div class="carousel-caption text-right">
-						<h1>One more for good measure.</h1>
-						<p>Cras justo odio, dapibus ac facilisis in, egestas eget
-							quam. Donec id elit non mi porta gravida at eget metus. Nullam id
-							dolor id nibh ultricies vehicula ut id elit.</p>
+						<h1>Remember to update your user profile.</h1>
+						<p>Update your personal info and password..</p>
 						<p>
-							<a class="btn btn-lg btn-primary" href="#" role="button">Browse
-								gallery</a>
+							<a class="btn btn-lg btn-primary" href="changeDetails.jsp" role="button">Account details</a>
 						</p>
 					</div>
 				</div>
@@ -103,7 +96,7 @@ h3 {
 					</a>
 					<div class="card-body text-center">
 						<h4 class="card-title">Shirts</h4>
-						<p class="text-muted">Starting from $499</p>
+						<p class="text-muted">Starting from $79</p>
 						<a class="btn btn-outline-primary btn-sm" href="shirts.jsp"
 							data-abc="true">View Products</a>
 					</div>
@@ -129,7 +122,7 @@ h3 {
 					</a>
 					<div class="card-body text-center">
 						<h4 class="card-title">Shoes</h4>
-						<p class="text-muted">Starting from $50</p>
+						<p class="text-muted">Starting from $99</p>
 						<a class="btn btn-outline-primary btn-sm" href="shoes.jsp"
 							data-abc="true">View Products</a>
 					</div>
@@ -155,7 +148,7 @@ h3 {
 					</a>
 					<div class="card-body text-center">
 						<h4 class="card-title">Accessories</h4>
-						<p class="text-muted">Starting from $9</p>
+						<p class="text-muted">Starting from $59</p>
 						<a class="btn btn-outline-primary btn-sm" href="accessories.jsp"
 							data-abc="true">View Products</a>
 					</div>
@@ -208,17 +201,7 @@ h3 {
 			%>
 		</div>
 	</div>
-
-	<!-- FOOTER -->
-	<footer class="container">
-		<hr class="featurette-divider">
-		<p class="float-right">
-			<a href="#">Back to top</a>
-		</p>
-		<p>
-			&copy; 2017-2018 Company, Inc. &middot; <a href="#">Privacy</a>
-			&middot; <a href="#">Terms</a>
-		</p>
-	</footer>
+	
+	<%@include file="footer.jsp"%>
 </body>
 </html>

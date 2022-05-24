@@ -30,8 +30,8 @@ if("invalid".equals(msg))
 <h1>Some thing Went Wrong! Try Again !</h1>
 <%} %>
 
-    <h2>Online Shopping</h2>
-    <p>The Online Shopping System is the application that allows the users to shop online without going to the shops to buy them.</p>
+    <h2>E-Shop</h2>
+			<p>Online shopping platform for everyone.</p>
   </div>
 </div>
 </body>

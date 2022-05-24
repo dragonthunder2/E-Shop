@@ -1,6 +1,6 @@
 <%@ page import="project.ConnectionProvider"%>
 <%@ page import="java.sql.*"%>
-<%@include file="footer.jsp" %>
+
 <html>
 <head>
 <link rel="stylesheet" href="css/addressPaymentForOrder-style.css">
@@ -11,6 +11,8 @@ if(window.history.forward(1)!=null)
 	window.history.forward(1);</script>
 </head>
 <body>
+
+
 <br>
 <table>
 <thead>
@@ -29,8 +31,8 @@ try
 	}
 %>
           <tr>
-          <th scope="col"><a href="myCart.jsp"><i class='fas fa-arrow-circle-left'> Back</i></a></th>
-            <th scope="col" style="background-color: yellow;">Total: <i class="fa fa-dollar"></i> <%out.println(total); %> </th>
+          <th scope="col"><a href="myCart.jsp"><i class="bg-primary text-blue"> Back to Cart</i></a></th>
+            <th scope="col" class="bg-primary text-blue">Total: <i class="fa fa-dollar"></i> $<%out.println(total); %> </th>
           </tr>
         </thead>
         <thead>
@@ -54,7 +56,7 @@ try
            <td><%out.println(sno); %></td>
             <td><%=rs.getString(2) %></td>
             <td><%=rs.getString(3) %></td>
-            <td><i class="fa fa-dollar"></i> <%=rs.getString(4) %></td>
+            <td><i class="fa fa-dollar"></i>$<%=rs.getString(4) %></td>
             <td><%=rs.getString(8) %> </td>
             <td><i class="fa fa-dollar"></i><%=rs.getString(10) %> </td>
             </tr>
@@ -107,12 +109,14 @@ try
 
 <div class="left-div">
 <h3>Mobile Number</h3>
-<input class="input-style" type="number" name="phoneNumber" value="<%=rs2.getString(3)%>" placeholder="Enter Phone Number">
+<input class="input-style" type="number" name="phoneNumber" value="<%=rs2.getString(3)%>" placeholder="Enter Phone Number" required>
 <h3 style="color: red">*This mobile number will also updated to your profile</h3>
 </div>
 <div class="right-div">
-<h3 style="color: red">*If you enter wrong transaction id then your order will we can cancel!</h3>
-<button class="button" type="submit">Generate Bill<i class='far fa-arrow-alt-circle-right'></i> </button>
+<br>
+<br>
+<br>
+<button class="button" type="submit">Purchase</button>
 <h3 style="color: red">*Fill form correctly</h3>
 </div>
 </form>
@@ -127,6 +131,5 @@ catch(Exception e)
       <br>
       <br>
       <br>
-
 </body>
 </html>

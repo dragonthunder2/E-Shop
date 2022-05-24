@@ -1,7 +1,6 @@
 <%@ page import="project.ConnectionProvider"%>
 <%@ page import="java.sql.*"%>
 <%@include file="adminHeader.jsp" %>
-<%@include file="../footer.jsp" %>
 <html>
 <head>
 <link rel="stylesheet" href="../css/addNewProduct-style.css">
@@ -81,7 +80,7 @@ catch(Exception e)
  <input class="input-style" type="text" name="descrip" placeholder="Enter Description">
 <hr>
 </div>
- <button class="button">Save <i class='far fa-arrow-alt-circle-right'></i></button>
+ <button class="button">Save <i></i></button>
 </form>
 </body>
 <br><br><br>
